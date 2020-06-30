@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>EigenesProjektWPF.NETCORE</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Endeavour.jpg" />
+    <None Remove="patent.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Endeavour.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="patent.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

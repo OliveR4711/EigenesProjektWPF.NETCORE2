@@ -1,0 +1,92 @@
+﻿<Page x:Class="EigenesProjektWPF.NETCORE.PageMain"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EigenesProjektWPF.NETCORE"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageA">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width= "*"/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="20"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="20"/>
+
+        </Grid.RowDefinitions>
+
+        <Frame x:Name="frmContent"
+               Content="Bedienungsanleitung #1 Netzwerk sowie Router einrichten"
+               Grid.Column="1"
+               Grid.Row="1"
+               Grid.ColumnSpan="6"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               NavigationUIVisibility="Hidden" Margin="63,54,0,0"/>
+        <!-- Frame wird später eine Page aufnehmen -->
+
+
+        <Button x:Name="btnA" 
+                Content="Zurück"
+                Grid.Column="1"
+                Grid.Row="3" 
+                Click="btnPageMain_Click"/>
+        <!--MouseEnter="AlblBegruessung_MouseEnter" 
+                MouseLeave="AlblBegruessung_MouseLeave"-->
+        <!--Image Source=".\patent.jpg" Height="20" Width="50"/-->
+
+        <Label x:Name="AlblBegruessung" 
+               Content="Zurück" 
+               Grid.Column="1" 
+               Grid.Row="3"/>
+
+        <!-- MouseEnter="AlblBegruessung_MouseEnter"
+               MouseLeave="AlblBegruessung_MouseLeave"/-->
+
+        <Button x:Name="btnB" 
+                Content="Hilfe rufen"
+                Grid.Column="3"
+                Grid.Row="3" 
+                Click="btnPageHelp_Click" 
+                MouseEnter="BlblBegruessung_MouseEnter" 
+                MouseLeave="BlblBegruessung_MouseLeave"/>
+        <!--Image Source=".\patent.jpg" Height="20" Width="50"/-->
+
+        <Label x:Name="BlblBegruessung" 
+               Content="Hilfe rufen" 
+               Grid.Column="3" 
+               Grid.Row="3"/>
+        <!--MouseEnter="BlblBegruessung_MouseEnter"
+               MouseLeave="BlblBegruessung_MouseLeave"/-->
+
+
+        <Button x:Name="btnC" 
+                Content="Vorwärts"
+                Grid.Column="5"
+                Grid.Row="3" />
+        <!--Click="btnPageB_Click" />
+        MouseEnter="ClblBegruessung_MouseEnter" 
+                MouseLeave="ClblBegruessung_MouseLeave"
+               Image Source=".\patent.jpg" Height="20" Width="50"/-->
+
+        <Label x:Name="ClblBegruessung" 
+               Content="Vorwärts" 
+               Grid.Column="5" 
+               Grid.Row="3"/>
+        <!--MouseEnter="ClblBegruessung_MouseEnter"
+               MouseLeave="ClblBegruessung_MouseLeave"/-->
+    </Grid>
+</Page>
